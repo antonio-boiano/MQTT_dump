@@ -8,10 +8,18 @@
   - `mqtt_compress.py`
 - Install_
   - `pip install paho-mqtt`
-  - 
 ### Running the Script
 
 To execute the Bash script, use the following command:
 
 ```bash
-./script_name.sh max_size_mb delay_seconds parent_output_folder
+./mqtt_dump.sh max_size_mb delay_seconds parent_output_folder
+```
+
+### Kill the Script
+
+To kill dump execute:
+
+```bash
+./kill_dump.sh
+```
