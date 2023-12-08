@@ -6,7 +6,7 @@
 - The following Python scripts should be present in the same directory as this Bash script:
   - `mqtt_acquire.py`
   - `mqtt_compress.py`
-- Install_
+- Install
   - `pip install paho-mqtt`
 ### Running the Script
 
