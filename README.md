@@ -8,6 +8,7 @@
   - `mqtt_compress.py`
 - Install
   - `pip install paho-mqtt`
+  - `sudo apt-get install p7zip-full`
 ### Running the Script
 
 To execute the Bash script, use the following command:
