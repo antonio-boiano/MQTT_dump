@@ -19,11 +19,13 @@ output_folder="${parent_output_folder}/${timestamp}"
 mkdir -p "$output_folder"
 
 # Execute the acquisition script in the background
-nohup python3 mqtt_acquire.py --maxsize "$max_size" --savedir "$output_folder" & disown
+#nohup python3 mqtt_acquire.py --maxsize "$max_size" --savedir "$output_folder" & disown
+python3 mqtt_acquire.py --maxsize "$max_size" --savedir "$output_folder" &
 
 # Give some time before starting the compression script (adjust as needed)
 sleep 5
 
 # Execute the compression script in the background
-nohup python3 mqtt_compress.py "$output_folder" --maxsize "$max_size" --delay "$delay" & disown
+#nohup python3 mqtt_compress.py "$output_folder" --maxsize "$max_size" --delay "$delay" & disown
+python3 mqtt_compress.py "$output_folder" --maxsize "$max_size" --delay "$delay" &
 
