@@ -13,7 +13,11 @@
 To execute the Bash script, use the following command:
 
 ```bash
-./mqtt_dump.sh max_size_mb delay_seconds parent_output_folder
+./mqtt_dump.sh max_size_mb  parent_output_folder
+```
+### Example
+```bash
+./mqtt_dump.sh 100  /home/MQTT
 ```
 
 ### Kill the Script
@@ -21,5 +25,5 @@ To execute the Bash script, use the following command:
 To kill dump execute:
 
 ```bash
-./kill_dump.sh
+./mqtt_kill.sh
 ```
